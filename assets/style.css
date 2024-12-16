@@ -1,1 +1,520 @@
+/* Reset Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden; /* Evitar rolagem horizontal indesejada */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 2% 5%;
+  max-height: 85px;
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 140px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Container do Slide */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-text {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.slide-description {
+  position: absolute;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  bottom: 40%; /* Ajustado para ser responsivo */
+  font-weight: normal;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Estilos do Botão */
+.contact-button {
+  display: inline-block;
+  background-color: #48ca7d;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 25%; 
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  max-width: 90%;
+}
+
+.contact-button:hover {
+  background-color: #000000bb;
+}
+
+.contact-button:active {
+  transform: scale(0.98);
+}
+
+/* Estilos para as Seções */
+.section {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* Responsividade para tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 3% 5%;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .slideshow-container {
+    height: 40vh;
+  }
+
+  .section {
+    padding: 5% 5%;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+    bottom: 7%; 
+  }
+
+  .slide-description {
+    font-size: 1rem;
+    bottom: 20%;
+  }
+}
+
+/* Responsividade para celulares (max-width: 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 4% 5%;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .slideshow-container {
+    height: 35vh;
+  }
+
+  .section {
+    padding: 4% 5%;
+  }
+
+  .contact-button {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    bottom: 5%; 
+  }
+
+  .slide-description {
+    font-size: 1rem;
+    bottom: 10%;
+  }
+}
+
+/* Responsividade para telas grandes (desktops grandes ou telas maiores que 1600px) */
+@media (min-width: 1600px) {
+  .navbar {
+    padding: 3% 10%;
+  }
+
+  .nav-links {
+    gap: 5rem;
+  }
+
+  .slideshow-container {
+    height: 40vh;
+  }
+
+  .section {
+    padding: 6% 15%;
+  }
+
+
+
+  .contact-button {
+    font-size: 1.1rem;
+    padding: 14px 24px;
+    bottom: 12%;
+  }
+}
+
+/* SECTION 1 */
+.services {
+  background-color: white;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1e3d58;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card i {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.visit-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 30px;
+  margin-top: 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: #218838;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 3% 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 10%;
+  text-align: left;
+}
+
+footer .footer-info, 
+footer .footer-social, 
+footer .footer-address, 
+footer .footer-links,
+footer .footer-solutions {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+footer .footer-info p,
+footer .footer-address p {
+  font-size: 0.9rem;
+}
+
+footer .footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer .footer-social a:hover {
+  color: #48ca7d; /* Altere a cor do ícone ao passar o mouse */
+}
+
+footer .footer-links ul,
+footer .footer-solutions ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-links ul li,
+footer .footer-solutions ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a,
+footer .footer-solutions a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer .footer-links a:hover,
+footer .footer-solutions a:hover {
+  color: #48ca7d; /* Cor de destaque ao passar o mouse */
+}
+
+/* Responsividade para tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  footer .footer-container {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  footer .footer-info, 
+  footer .footer-social, 
+  footer .footer-address, 
+  footer .footer-links,
+  footer .footer-solutions {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-social a {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-links ul,
+  footer .footer-solutions ul {
+    padding-left: 0;
+  }
+}
+
+/* Responsividade para celulares (max-width: 600px) */
+@media (max-width: 600px) {
+  footer .footer-container {
+    flex-direction: column;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  footer .footer-info, 
+  footer .footer-social, 
+  footer .footer-address, 
+  footer .footer-links,
+  footer .footer-solutions {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-social a {
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+
+  footer .footer-links ul li,
+  footer .footer-solutions ul li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  footer .footer-links a,
+  footer .footer-solutions a {
+    font-size: 1rem;
+  }
+}
+
+/* Responsividade para telas grandes (desktops grandes ou telas maiores que 1600px) */
+@media (min-width: 1600px) {
+  footer .footer-container {
+    padding: 0 10%;
+  }
+
+  footer .footer-info,
+  footer .footer-social,
+  footer .footer-address,
+  footer .footer-links,
+  footer .footer-solutions {
+    flex: 1 1 20%;
+  }
+
+  footer .footer-social a {
+    font-size: 2rem;
+  }
+
+  footer .footer-links ul,
+  footer .footer-solutions ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  footer .footer-links ul li,
+  footer .footer-solutions ul li {
+    display: inline-block;
+  }
+}
 
