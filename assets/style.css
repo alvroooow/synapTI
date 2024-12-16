@@ -280,7 +280,15 @@ body {
 
 .services h2 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+
+
+.services h5 {
+  font-size: 1.0rem;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -515,6 +523,380 @@ footer .footer-solutions a:hover {
   footer .footer-links ul li,
   footer .footer-solutions ul li {
     display: inline-block;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.card {
+  background-color: #1e3d58;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card i {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.visit-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 30px;
+  margin-top: 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: #218838;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 3% 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 10%;
+  text-align: left;
+}
+
+footer .footer-info, 
+footer .footer-social, 
+footer .footer-address, 
+footer .footer-links,
+footer .footer-solutions {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+footer .footer-info p,
+footer .footer-address p {
+  font-size: 0.9rem;
+}
+
+footer .footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer .footer-social a:hover {
+  color: #48ca7d; /* Altere a cor do ícone ao passar o mouse */
+}
+
+footer .footer-links ul,
+footer .footer-solutions ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-links ul li,
+footer .footer-solutions ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-links a,
+footer .footer-solutions a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer .footer-links a:hover,
+footer .footer-solutions a:hover {
+  color: #48ca7d; /* Cor de destaque ao passar o mouse */
+}
+
+/* Responsividade para tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  footer .footer-container {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  footer .footer-info, 
+  footer .footer-social, 
+  footer .footer-address, 
+  footer .footer-links,
+  footer .footer-solutions {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-social a {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-links ul,
+  footer .footer-solutions ul {
+    padding-left: 0;
+  }
+}
+
+/* Responsividade para celulares (max-width: 600px) */
+@media (max-width: 600px) {
+  footer .footer-container {
+    flex-direction: column;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  footer .footer-info, 
+  footer .footer-social, 
+  footer .footer-address, 
+  footer .footer-links,
+  footer .footer-solutions {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-social a {
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+
+  footer .footer-links ul li,
+  footer .footer-solutions ul li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  footer .footer-links a,
+  footer .footer-solutions a {
+    font-size: 1rem;
+  }
+}
+
+/* Sobre a Empresa */
+.sobre {
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sobre-text {
+  flex: 1;
+  text-align: left;
+}
+
+.sobre-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.sobre-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-text strong {
+  color: #1e3d58; /* Destaque para a marca */
+}
+
+.sobre-imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas para a imagem */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1e3d58;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #48ca7d;
+  color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-text {
+    text-align: center;
+  }
+}
+
+/* Seção de Contato */
+.contato {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contato p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.form-contato {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #48ca7d;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-enviar {
+  background-color: #48ca7d;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #3e9d66;
+}
+
+.btn-enviar:active {
+  transform: scale(0.98);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .contato {
+    padding: 40px 10px;
+  }
+
+  .form-contato {
+    padding: 20px;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .btn-enviar {
+    font-size: 1.2rem;
+    padding: 12px 24px;
   }
 }
 
