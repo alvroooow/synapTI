@@ -15,14 +15,15 @@
       <img src="assets/img/logo.png" alt="Logo">
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Serviços</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#01">Home</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
   <!-- Slide pequeno -->
+   <section id ="01"
   <div class="slideshow-container">
     <div class="slide">
       <img src="assets/img/slide.jpg" alt="Slide 1">
@@ -32,47 +33,106 @@
       <a href="https://wa.me/5511999999999?text=Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20suporte%20TI." class="contact-button">FALE COM UM ESPECIALISTA</a>
     </div>
   </div>
-  <section class="services">
+</section>
+  <section class="services" id="services">
   <h2>Serviços Oferecidos</h2>
-  <p>Suporte de TI Níveis 1, 2 e 3 na Região do Vale do Paraiba.</p>
+  <h5>Suporte de TI Níveis 1, 2 e 3 na Região do Vale do Paraiba.</h5>
   <div class="service-cards">
     <div class="card">
-      <i class="fas fa-server"></i> <!-- Ícone de Servidor -->
-      <h3>Redes e Servidores</h3>
-      <p>Configuração e Manutenção em Servidores Windows e Linux, Roteadores, VPN</p>
+      <i class="fa-solid fa-sitemap"></i> <!-- Ícone de Infraestrutura Basica -->
+      <h3>Infraestrutura Básica</h3>
+      <p>Configuração de redes, servidores e dispositivos para garantir a conectividade e o funcionamento da empresa.</p>
     </div>
+
     <div class="card">
-      <i class="fas fa-laptop"></i> <!-- Ícone de Computador -->
-      <h3>Suporte de TI</h3>
-      <br>
-      
-      <p>Contrato Mensal, Gestão Completa, Helpdesk, Suporte Técnico, Software e Hardware</p>
+      <i class="fa-solid fa-phone-volume"></i> <!-- Ícone de Help -->
+      <h3>Suporte HelpDesk</h3> 
+      <p>Atendimento técnico para resolver problemas de hardware, software e treinamento de colaboradores.</p>
     </div>
+
     <div class="card">
-      <i class="fas fa-shield-alt"></i> <!-- Ícone de Escudo -->
-      <h3>Backup e Segurança</h3>
-      <p>Proteja seus dados, evite invasores e vírus com as ferramentas mais seguras do mercado</p>
+      <i class="fa-brands fa-uncharted"></i> <!-- Ícone de Software -->
+      <h3>Gestão de Software</h3>
+      <p> Instalação, configuração e gerenciamento de ferramentas e sistemas essenciais para as operações.</p>
     </div>
+
+
+    <div class="card">
+    <i class="fa-solid fa-shield"></i> <!-- Ícone de Segurança da Informação -->
+      <h3>Segurança da Informação</h3>
+      <p>Implementação de antivírus, backups e firewalls para proteger dados e prevenir ataques cibernéticos.</p>
+    </div>
+
     <div class="card">
       <i class="fas fa-cloud"></i> <!-- Ícone de Nuvem -->
-      <h3>Nuvem Corporativa</h3>
-      <p>Seus arquivos em nuvem, Segurança, Mobilidade, Economia e Rapidez para sua empresa</p>
+      <h3>Suporte à Nuvem</h3>
+      <p> Configuração de armazenamento e serviços em nuvem, como Google Drive, OneDrive e servidores.</p>
+    </div>
+
+    <div class="card">
+    <i class="fa-solid fa-laptop-code"></i> <!-- Ícone de Programação -->
+      <h3>Desenvolvimento Web</h3>
+      <p>Criação e suporte para sites, hospedagem e desenvolvimento de soluções personalizadas.</p>
+    </div>
+    <div class="card">
+    <i class="fa-solid fa-screwdriver-wrench"></i> <!-- Ícone de Manutenção -->
+      <h3>Manutenção Preventiva</h3>
+      <p>Monitoramento contínuo e atualizações para evitar falhas e melhorar o desempenho.</p>
+    </div>
+    <div class="card">
+    <i class="fa-solid fa-stairs"></i> <!-- Ícone de Escabilidade -->
+      <h3>Escalabilidade</h3>
+      <p>Planejamento e implementação de tecnologias para o crescimento da empresa.</p>
     </div>
   </div>
 </section>
 
 
-  <!-- Seção 2 -->
-  <section class="section" id="section2">
-    <h2>Seção 2</h2>
-    <p>Conteúdo da segunda seção.</p>
-  </section>
+<!-- Sobre a Empresa -->
+<section id="sobre" class="sobre">
+  <div class="sobre-container">
+    <div class="sobre-text">
+      <h2>Sobre a Empresa</h2>
+      <p>
+        A <strong>SynapTI</strong> é uma empresa em ascensão, focada em oferecer soluções tecnológicas de alta qualidade para empresas que buscam inovação e eficiência. Atuamos com suporte técnico, soluções em nuvem, segurança digital e consultoria em TI, ajudando nossos clientes a otimizar suas operações e alcançar melhores resultados. Nosso compromisso é transformar desafios em oportunidades, conectando tecnologia às necessidades do mercado.
+      </p>
+      <p>
+      Valorizamos a confiança, excelência no atendimento e a busca constante por inovação para crescer junto com nossos parceiros e clientes. Acreditamos que a tecnologia é a chave para impulsionar negócios e criar um futuro mais conectado e eficiente. Na SynapTI, a sua evolução é a nossa prioridade.
+      </p>
+    </div>
+    <div class="sobre-imagem">
+      <img src="assets/img/slide.jpg" alt="Imagem sobre a empresa" />
+    </div>
+  </div>
+</section>
 
-  <!-- Seção 3 -->
-  <section class="section" id="section3">
-    <h2>Seção 3</h2>
-    <p>Conteúdo da terceira seção.</p>
-  </section>
+ <!-- SEÇÃO DE CONTATO --->
+<section id="contato" class="contato">
+  <div class="container">
+    <h2>Entre em Contato</h2>
+    <p>Tem alguma dúvida? Estamos aqui para ajudar! Preencha o formulário abaixo e entraremos em contato em breve.</p>
+    
+    <form action="enviar_formulario.php" method="POST" class="form-contato">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem"></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </div>
+</section>
+
 
   <!-- Rodapé -->
   <footer>
